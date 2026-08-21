@@ -63,6 +63,25 @@ Validation notes and the tested environment are recorded in [docs/VALIDATION.md]
 
 This repository contains only the fixed triple-tap script edition. Native GUI, configurable double/triple tap, and tray features are not part of this repository. Historical HTML mockups are not executable features and are intentionally excluded.
 
+### Windows 完整版 / Full Windows Edition
+
+![超级截图 Windows 完整版真实主界面](docs/images/paid-edition-main-zh.png)
+
+完整的原生 Windows 版包含两个可直接运行的绿色 EXE，**合计 US$3.99**：
+
+| 版本 | 适合谁 | 主要区别 |
+|---|---|---|
+| 托盘显示版 | 推荐大多数用户 | 显示托盘图标，可从托盘打开、暂停/恢复或退出 |
+| 隐藏托盘版 | 希望后台更整洁的用户 | 不显示托盘图标；再次运行同一 EXE 可唤回窗口 |
+
+一次购买同时包含两个版本，并允许购买者在**本人拥有或日常使用的多台 Windows 电脑**上使用。付款确认后，请提供 GitHub 用户名，我会邀请你进入私有仓库获取两个 EXE、使用说明、更新和完整资料。不得转售、公开分享或转发给其他人。
+
+优先通过微信联系：`ZZSygwh2025`。价格为 **US$3.99**，使用微信付款时按付款当时的汇率折算；付款前请先添加微信确认。也可通过 Email 联系。
+
+The native Windows edition includes both the tray and hidden-tray portable EXE editions for **US$3.99 total**. One purchase permits the buyer to use the software on multiple Windows computers they personally own or regularly use. After payment is confirmed, send your GitHub username to receive an invitation to the private repository. Redistribution, resale, public sharing, and forwarding to other people are not permitted.
+
+WeChat is preferred: `ZZSygwh2025`. Please contact me before paying. Email is also available. See the [complete purchase and edition details](docs/COMMERCIAL_EDITION.md).
+
 ## 联系 / Contact
 
 - GitHub: [liuyifeiyifei999-bot](https://github.com/liuyifeiyifei999-bot)
