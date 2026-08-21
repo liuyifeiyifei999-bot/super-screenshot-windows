@@ -1,9 +1,10 @@
 Option Explicit
 
-Const RunValuePath = "HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SuperScreenshotScript"
+Const RunValuePath = "HKCU\Software\Microsoft\Windows\CurrentVersion\Run\CtrlScreenshotFree"
+Const LegacyRunValuePath = "HKCU\Software\Microsoft\Windows\CurrentVersion\Run\SuperScreenshotScript"
 
 Dim fso, shell, mode, scriptDir, launcherPath, wscriptPath, runCommand
-Dim savedValue, readError
+Dim savedValue, readError, legacyValue, legacyReadError
 
 If WScript.Arguments.Count <> 1 Then
     WScript.Echo "Usage: Manage-Startup.vbs enable|disable"
@@ -41,19 +42,28 @@ If mode = "enable" Then
         WScript.Quit 1
     End If
 
+    On Error Resume Next
+    shell.RegDelete LegacyRunValuePath
+    Err.Clear
+    On Error GoTo 0
+
     WScript.Quit 0
 End If
 
 If mode = "disable" Then
     On Error Resume Next
     shell.RegDelete RunValuePath
+    shell.RegDelete LegacyRunValuePath
     Err.Clear
     savedValue = shell.RegRead(RunValuePath)
     readError = Err.Number
+    Err.Clear
+    legacyValue = shell.RegRead(LegacyRunValuePath)
+    legacyReadError = Err.Number
     On Error GoTo 0
 
-    If readError = 0 Then
-        WScript.Echo "The startup registry value still exists."
+    If readError = 0 Or legacyReadError = 0 Then
+        WScript.Echo "A startup registry value still exists."
         WScript.Quit 1
     End If
 

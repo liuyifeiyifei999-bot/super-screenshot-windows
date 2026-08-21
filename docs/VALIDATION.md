@@ -19,8 +19,9 @@ Windows 11 and a native English Windows installation were not available in the c
 3. The original trigger used deprecated `keybd_event`. Version 1.1.0 uses one correctly aligned x64 `SendInput` sequence.
 4. The stop callback previously called `Application.Exit()` from a worker callback. It now marshals the request to the WinForms message-loop thread.
 5. Chinese ANSI launcher filenames created cross-locale risk. Public executable-script filenames are now ASCII, and the PowerShell core retains a UTF-8 BOM.
-6. Startup-folder shortcut changes were blocked by policy in the tested environment. Startup configuration now uses one verified per-user registry value: `SuperScreenshotScript`.
+6. Startup-folder shortcut changes were blocked by policy in the tested environment. Startup configuration now uses one verified per-user registry value: `CtrlScreenshotFree`; enabling or disabling also cleans up the former `SuperScreenshotScript` value.
 7. Historical HTML pages described GUI and double-tap features that are not in the script edition. They are excluded, and the documentation states the actual feature set only.
+8. The public brand is now Ctrl Screenshot. The public Free edition continues to advertise and implement only `Triple Ctrl = Screenshot`.
 
 ## Checks completed
 

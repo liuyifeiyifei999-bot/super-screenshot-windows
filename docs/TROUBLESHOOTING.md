@@ -36,6 +36,6 @@ The listener has already exited or failed to start. Run the launcher again and f
 
 ## 移动目录后无法开机启动 / Startup breaks after moving the folder
 
-在新位置重新运行 `Enable-Startup.bat`。脚本会用当前启动器的完整路径覆盖本工具自己的 `SuperScreenshotScript` 注册表值。
+在新位置重新运行 `Enable-Startup.bat`。脚本会用当前启动器的完整路径覆盖 Ctrl Screenshot Free 自己的 `CtrlScreenshotFree` 注册表值。
 
-Run `Enable-Startup.bat` again from the new location. It overwrites this tool's `SuperScreenshotScript` registry value with the launcher's current full path.
+Run `Enable-Startup.bat` again from the new location. It overwrites Ctrl Screenshot Free's `CtrlScreenshotFree` registry value with the launcher's current full path.

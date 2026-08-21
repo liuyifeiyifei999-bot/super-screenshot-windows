@@ -1,86 +1,107 @@
-# 超级截图脚本版 / Super Screenshot Script Edition
+# Ctrl Screenshot
 
-> 连续轻按三次左 Ctrl，快速调用 Windows 系统截图。<br>
-> Press Left Ctrl three times to open the Windows Snipping Tool.
+## Triple Ctrl = Screenshot
 
-这是“超级截图”的免费开源脚本版，使用 VBScript 启动一个隐藏的 PowerShell 监听器。它只识别三次独立的左 Ctrl 点击，然后模拟 Windows 原生快捷键 `Win + Shift + S`。
+**三按 Ctrl = 截图**
 
-This repository contains the free and open-source script edition of Super Screenshot. A small VBScript launcher starts a hidden PowerShell listener. Three separate Left Ctrl taps trigger the native Windows shortcut `Win + Shift + S`.
+Turn `Win + Shift + S` into three simple Left Ctrl taps.
+
+Windows 自带截图已经很好用。Ctrl Screenshot 不重新制作截图工具，只把截图这个高频动作变得更容易触发。
+
+**Free & Open Source · 免费开源 · 无需安装 · 不联网**
+
+![Ctrl Screenshot Pro 真实主界面](docs/images/ctrl-screenshot-pro-main-zh.png)
+
+> 图片展示的是 Ctrl Screenshot Pro。当前公开仓库提供固定三按的免费开源版。
 
 Current version: **1.1.0**
 
-## 功能 / Features
+## 为什么 Ctrl Screenshot？ / Why Ctrl Screenshot?
 
-- 三次左 Ctrl 触发，单次间隔不超过 500ms
-- 只识别左 Ctrl；右 Ctrl 不触发
-- 长按只计一次，`Ctrl+C`、`Ctrl+V` 等组合键不累计
-- 不拦截原有按键或其他软件快捷键
-- 支持启动、停止、启用和关闭开机启动
-- 单实例后台监听
-- 不联网、不上传截图、不记录输入文字
-- Windows 10 / 11 64 位
+传统方式：`Win + Shift + S`
 
-- Triple-tap Left Ctrl with a maximum 500ms gap
-- Left Ctrl only; Right Ctrl does not trigger it
-- Key holds count once; Ctrl shortcuts do not accumulate taps
-- Does not block normal keys or existing shortcuts
-- Start, stop, enable startup, and disable startup scripts included
-- Single background listener instance
-- No networking, screenshot upload, telemetry, or typed-text logging
-- Windows 10 / 11 64-bit
+Ctrl Screenshot：`Triple Ctrl = Screenshot`
 
-## 快速开始 / Quick Start
+Left Ctrl 是左手很容易找到的按键。连续轻按后，截图可以变成自然的肌肉记忆。
 
-下载或克隆仓库后，进入 `source` 目录：
+> Ctrl Screenshot 不重新发明截图工具。它只是让 Windows 截图变得更容易触发。
 
-1. 双击 `Start-TripleCtrl-Screenshot.vbs`。
-2. 连续轻按三次左 Ctrl。
-3. Windows 区域截图界面会打开。
-4. 需要关闭监听时，运行 `Stop-TripleCtrl-Screenshot.bat`。
+> Ctrl Screenshot does not replace the Windows Snipping Tool. It makes it faster to open.
 
-After downloading or cloning the repository, open `source`:
+区域选择、截图、剪贴板和通知仍然全部由 Windows 处理。
 
-1. Double-click `Start-TripleCtrl-Screenshot.vbs`.
-2. Tap Left Ctrl three times.
-3. The Windows Snipping Tool overlay opens.
-4. Run `Stop-TripleCtrl-Screenshot.bat` to stop the listener.
+## 免费版快速开始 / Free Quick Start
 
-Detailed instructions are in [docs/USAGE.md](docs/USAGE.md).
+1. 下载或克隆本仓库。
+2. 打开 `source` 文件夹。
+3. 双击 `Start-TripleCtrl-Screenshot.vbs`。
+4. 连续轻按三次左 Ctrl。
+5. 使用 Windows 截图界面选择区域。
 
-## 隐私与透明度 / Privacy & Transparency
+停止监听时，运行 `Stop-TripleCtrl-Screenshot.bat`。完整说明见 [使用教程](docs/USAGE.md)。
 
-该工具使用 Windows 低级键盘 Hook 判断左 Ctrl 的按下和松开，但不会保存完整键盘记录、读取密码、读取截图、访问剪贴板或连接服务器。截图本身完全由 Windows 处理。
+1. Download or clone this repository.
+2. Open `source`.
+3. Run `Start-TripleCtrl-Screenshot.vbs`.
+4. Triple-tap Left Ctrl.
+5. Select a region in the Windows Snipping Tool.
 
-The tool uses a Windows low-level keyboard hook to evaluate Left Ctrl press/release events. It does not store full keyboard logs, read passwords or screenshots, access screenshot clipboard data, or connect to a server. Windows performs the screenshot operation.
+## Free vs Pro
 
-See [docs/PRIVACY_AND_SECURITY.md](docs/PRIVACY_AND_SECURITY.md) for the exact behavior and limitations.
+| 功能 / Feature | Ctrl Screenshot Free | Ctrl Screenshot Pro |
+|---|---:|---:|
+| 三按左 Ctrl 截图 / Triple Ctrl | ✅ | ✅ |
+| 双按左 Ctrl 截图 / Double Ctrl | — | ✅ |
+| 原生图形界面 / Native GUI | — | ✅ |
+| 中文 / English | — | ✅ |
+| 托盘控制 / Tray controls | — | ✅ |
+| 隐藏托盘版 / Hidden-tray edition | — | ✅ |
+| 开机启动 / Start with Windows | ✅ | ✅ |
+| 绿色便携 / Portable | ✅ | ✅ |
+| 不上传截图 / No screenshot upload | ✅ | ✅ |
+| 价格 / Price | Free | **US$3.99** |
 
-Validation notes and the tested environment are recorded in [docs/VALIDATION.md](docs/VALIDATION.md).
+## Ctrl Screenshot Pro
 
-## 开源版与其他版本 / Editions
+### Double Ctrl or Triple Ctrl = Screenshot
 
-本仓库只包含固定“三按左 Ctrl”的脚本版。原生 GUI、双按/三按切换和托盘功能不属于本仓库，不应根据旧 HTML 展示稿推断本版本功能。
+**双按或三按 Ctrl = 截图**
 
-This repository contains only the fixed triple-tap script edition. Native GUI, configurable double/triple tap, and tray features are not part of this repository. Historical HTML mockups are not executable features and are intentionally excluded.
+原生 Windows GUI，可自由切换双按或三按，同时包含：
 
-### Windows 完整版 / Full Windows Edition
+- **Tray Edition**：托盘显示版，可打开、暂停、恢复或退出。
+- **Hidden Tray Edition**：隐藏托盘版，无托盘图标，再次运行 EXE 可唤回界面。
 
-![超级截图 Windows 完整版真实主界面](docs/images/paid-edition-main-zh.png)
+**Both editions included — US$3.99 total.**
 
-完整的原生 Windows 版包含两个可直接运行的绿色 EXE，**合计 US$3.99**：
+优先通过微信 `ZZSygwh2025` 联系；也可发送邮件至 `liuyifeiyifei999@gmail.com`。付款确认后提供 GitHub 用户名，受邀进入私有仓库获取两个版本。
 
-| 版本 | 适合谁 | 主要区别 |
-|---|---|---|
-| 托盘显示版 | 推荐大多数用户 | 显示托盘图标，可从托盘打开、暂停/恢复或退出 |
-| 隐藏托盘版 | 希望后台更整洁的用户 | 不显示托盘图标；再次运行同一 EXE 可唤回窗口 |
+[查看完整介绍、截图和购买说明 →](docs/COMMERCIAL_EDITION.md)
 
-一次购买同时包含两个版本，并允许购买者在**本人拥有或日常使用的多台 Windows 电脑**上使用。付款确认后，请提供 GitHub 用户名，我会邀请你进入私有仓库获取两个 EXE、使用说明、更新和完整资料。不得转售、公开分享或转发给其他人。
+## 隐私 / Privacy
 
-优先通过微信联系：`ZZSygwh2025`。价格为 **US$3.99**，使用微信付款时按付款当时的汇率折算；付款前请先添加微信确认。也可通过 Email 联系。
+- No account / 无需账号
+- No screenshot upload / 不上传截图
+- No telemetry / 无遥测
+- No ads / 无广告
+- Screenshot handled by Windows / 截图由 Windows 处理
 
-The native Windows edition includes both the tray and hidden-tray portable EXE editions for **US$3.99 total**. One purchase permits the buyer to use the software on multiple Windows computers they personally own or regularly use. After payment is confirmed, send your GitHub username to receive an invitation to the private repository. Redistribution, resale, public sharing, and forwarding to other people are not permitted.
+详细行为和限制见 [隐私与安全](docs/PRIVACY_AND_SECURITY.md)。
 
-WeChat is preferred: `ZZSygwh2025`. Please contact me before paying. Email is also available. See the [complete purchase and edition details](docs/COMMERCIAL_EDITION.md).
+## 工作原理 / How It Works
+
+免费版使用 VBScript 启动隐藏的 PowerShell 监听器，只判断左 Ctrl 的独立按下与松开。三次有效轻按后，它通过 `SendInput` 调用 `Win + Shift + S`。右 Ctrl、长按以及 `Ctrl+C`、`Ctrl+V` 等组合键不会累计，原有按键仍会传递给当前软件。
+
+The Free edition launches a hidden PowerShell listener through VBScript. It counts independent Left Ctrl taps and uses `SendInput` to invoke `Win + Shift + S` after three valid taps. It does not replace Windows capture, editing, OCR, or storage features.
+
+## 文档 / Documentation
+
+- [使用教程 / Usage](docs/USAGE.md)
+- [常见问题 / Troubleshooting](docs/TROUBLESHOOTING.md)
+- [隐私与安全 / Privacy & Security](docs/PRIVACY_AND_SECURITY.md)
+- [校验记录 / Validation](docs/VALIDATION.md)
+- [更新日志 / Changelog](CHANGELOG.md)
+- [Ctrl Screenshot Pro](docs/COMMERCIAL_EDITION.md)
 
 ## 联系 / Contact
 
@@ -90,4 +111,6 @@ WeChat is preferred: `ZZSygwh2025`. Please contact me before paying. Email is al
 
 ## License
 
-[MIT License](LICENSE) © 2026 liuyifeiyifei999-bot
+公开仓库中的 Ctrl Screenshot Free 按 [MIT License](LICENSE) 授权。Ctrl Screenshot Pro 的 C 源码、商业 EXE 和私有资料不属于 MIT 授权范围。
+
+Ctrl Screenshot Free is licensed under the [MIT License](LICENSE). The proprietary C source, commercial EXE files, and private materials for Ctrl Screenshot Pro are not covered by the MIT License.

@@ -9,7 +9,7 @@ scriptDir = fso.GetParentFolderName(WScript.ScriptFullName)
 ps1Path = fso.BuildPath(scriptDir, "TripleCtrlScreenshot.ps1")
 
 If Not fso.FileExists(ps1Path) Then
-    MsgBox "TripleCtrlScreenshot.ps1 was not found. Keep all source files in the same folder.", 16, "Super Screenshot Script Edition"
+    MsgBox "TripleCtrlScreenshot.ps1 was not found. Keep all source files in the same folder.", 16, "Ctrl Screenshot Free"
     WScript.Quit 1
 End If
 startCommand = "powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle Hidden -File """ & ps1Path & """"
@@ -21,6 +21,6 @@ checkCommand = "powershell.exe -NoProfile -ExecutionPolicy Bypass -WindowStyle H
 checkResult = shell.Run(checkCommand, 0, True)
 
 If checkResult <> 0 Then
-    MsgBox "The screenshot listener could not start. Check Windows PowerShell permissions or security software, then try again.", 16, "Super Screenshot Script Edition"
+    MsgBox "The screenshot listener could not start. Check Windows PowerShell permissions or security software, then try again.", 16, "Ctrl Screenshot Free"
     WScript.Quit 1
 End If

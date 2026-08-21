@@ -1,5 +1,13 @@
 # Changelog
 
+## Ctrl Screenshot brand update - 2026-08-21
+
+- Renamed the product from Super Screenshot to **Ctrl Screenshot**.
+- Rebuilt the repository landing page around **Triple Ctrl = Screenshot**.
+- Clearly separated Ctrl Screenshot Free from Ctrl Screenshot Pro.
+- Renamed the startup value to `CtrlScreenshotFree` while cleaning up the former value for compatibility.
+- Updated screenshots, commercial details, documentation, repository description, and release packaging.
+
 ## Documentation update - 2026-08-21
 
 - Added the native Windows full-edition introduction and real application screenshots.
