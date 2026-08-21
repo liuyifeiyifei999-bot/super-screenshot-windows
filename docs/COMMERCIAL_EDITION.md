@@ -29,6 +29,8 @@
 
 ![移动 EXE 后修复开机启动路径](images/startup-path-repair-zh.png)
 
+> 如果您更换了 EXE 的位置，请点击“更新启动位置”按钮直接修复。
+
 **只要您移动或重命名了 EXE，从新位置运行软件并点击紫色的“更新启动位置”按钮，就会立即修复开机启动路径。** 现在点击可以，以后手动打开软件再点击也可以，不需要等到下一次开机。上方的“需要更新”表示开机启动仍然开启，但 Windows 记录的还是原来的 EXE 路径。修复完成后，后续开机都会从新位置自动启动。橙色的“取消开机启动”按钮才是关闭自动启动。
 
 After moving or renaming the EXE, run it from the new location and click **Update startup location** to repair the saved path immediately. You can do this now or whenever you next open the app manually; there is no need to wait for another Windows startup. The top status indicates that startup is still enabled but Windows has the old EXE path. After repair, future Windows startups use the new location. **Disable startup** is the separate action that turns automatic startup off.
