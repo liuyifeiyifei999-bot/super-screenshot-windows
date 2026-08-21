@@ -48,11 +48,11 @@ No tray icon. Closing the window keeps it running in the background; launch the 
 
 ![移动 EXE 后修复开机启动路径](images/ctrl-screenshot-pro-startup-repair-zh.png)
 
-> 如果您更换了 EXE 的位置，请点击“更新启动位置”按钮直接修复。
+> 下方“开机自动启动”只负责开启自动启动。如果您更换了 EXE 的位置，请点击上方“修复启动位置”按钮直接修复。
 
 按钮会立即把开机启动路径修复为当前 EXE 的位置。现在点击或以后手动打开软件再点击都可以；修复后，后续开机都会从新位置自动启动。“取消开机启动”才是关闭自动启动。
 
-Run the EXE from its new location and click **Update startup location**. The saved startup path is repaired immediately. **Disable startup** is the separate action that turns automatic startup off.
+**Start automatically** below enables automatic startup. After moving the EXE, run it from the new location and click **Repair startup path** at the top. The saved path is repaired immediately. **Disable startup** is the separate action that turns automatic startup off.
 
 ## 价格与获取方式 / Purchase
 

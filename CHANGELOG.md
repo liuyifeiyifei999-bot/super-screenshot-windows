@@ -3,6 +3,7 @@
 ## Ctrl Screenshot brand update - 2026-08-21
 
 - Renamed the product from Super Screenshot to **Ctrl Screenshot**.
+- Corrected the Pro startup controls: **Start automatically** remains the lower enable button, while **Repair startup path** is a separate upper button for moved EXE files.
 - Rebuilt the repository landing page around **Triple Ctrl = Screenshot**.
 - Clearly separated Ctrl Screenshot Free from Ctrl Screenshot Pro.
 - Renamed the startup value to `CtrlScreenshotFree` while cleaning up the former value for compatibility.
