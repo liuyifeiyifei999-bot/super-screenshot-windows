@@ -4,6 +4,10 @@
 
 **双按或三按 Ctrl = 截图**
 
+Current Pro version: **1.1.1**
+
+[观看完整操作演示 MP4 / Watch the full operation demo](https://github.com/liuyifeiyifei999-bot/ctrl-screenshot-windows/releases/download/v1.1.1/Ctrl-Screenshot-Pro-Demo.mp4)
+
 把 `Win + Shift + S` 变成连续轻按两次或三次左 Ctrl。Ctrl Screenshot Pro 只优化触发动作；选区、截图、剪贴板和通知仍由 Windows 系统截图工具处理。
 
 ![Ctrl Screenshot Pro 真实主界面](images/ctrl-screenshot-pro-main-zh.png)
@@ -50,7 +54,7 @@ No tray icon. Closing the window keeps it running in the background; launch the 
 
 > 下方“开机自动启动”只负责开启自动启动。如果您更换了 EXE 的位置，请点击上方“修复启动位置”按钮直接修复。
 
-按钮会立即把开机启动路径修复为当前 EXE 的位置。现在点击或以后手动打开软件再点击都可以；修复后，后续开机都会从新位置自动启动。“取消开机启动”才是关闭自动启动。
+点击后会先提示“如果您更换了这个软件的位置，请点击‘是’修复开机启动路径”。确认后，软件会立即把路径修复为当前 EXE 的位置并显示成功信息。现在点击或以后手动打开软件再点击都可以；修复后，后续开机都会从新位置自动启动。“取消开机启动”才是关闭自动启动。
 
 **Start automatically** below enables automatic startup. After moving the EXE, run it from the new location and click **Repair startup path** at the top. The saved path is repaired immediately. **Disable startup** is the separate action that turns automatic startup off.
 

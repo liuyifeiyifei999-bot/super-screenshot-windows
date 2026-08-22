@@ -10,11 +10,29 @@ Windows 自带截图已经很好用。Ctrl Screenshot 不重新制作截图工�
 
 **Free & Open Source · 免费开源 · 无需安装 · 不联网**
 
-![Ctrl Screenshot Pro 真实主界面](docs/images/ctrl-screenshot-pro-main-zh.png)
+[**⬇ Download Ctrl Screenshot Free v1.1.1**](https://github.com/liuyifeiyifei999-bot/ctrl-screenshot-windows/releases/download/v1.1.1/Ctrl-Screenshot-Free-v1.1.1.zip)
 
-> 图片展示的是 Ctrl Screenshot Pro。当前公开仓库提供固定三按的免费开源版。
+![Ctrl Screenshot Free：真实三按左 Ctrl 打开 Windows 截图工具](docs/images/ctrl-screenshot-free-demo.gif)
 
-Current version: **1.1.0**
+[观看 Free 完整演示 MP4 / Watch the full Free demo](https://github.com/liuyifeiyifei999-bot/ctrl-screenshot-windows/releases/download/v1.1.1/Ctrl-Screenshot-Free-Demo-v1.1.1.mp4)
+
+Current version: **1.1.1**
+
+## 免费版快速开始 / Free Quick Start
+
+1. 下载上方 ZIP。
+2. 解压 ZIP。
+3. 双击 `Start-TripleCtrl-Screenshot.vbs`。
+4. 连续轻按三次左 Ctrl。
+
+停止监听时，双击 `Stop-TripleCtrl-Screenshot.bat`。开机启动辅助文件也已经放在同一目录中。
+
+1. Download the ZIP above.
+2. Extract it.
+3. Double-click `Start-TripleCtrl-Screenshot.vbs`.
+4. Triple-tap Left Ctrl.
+
+No installer, account, or background networking is required. Full instructions: [Usage](docs/USAGE.md).
 
 ## 为什么 Ctrl Screenshot？ / Why Ctrl Screenshot?
 
@@ -22,29 +40,9 @@ Current version: **1.1.0**
 
 Ctrl Screenshot：`Triple Ctrl = Screenshot`
 
-Left Ctrl 是左手很容易找到的按键。连续轻按后，截图可以变成自然的肌肉记忆。
+Left Ctrl 是左手很容易找到的按键。连续轻按后，截图可以变成自然的肌肉记忆。区域选择、截图、剪贴板和通知仍然全部由 Windows 处理。
 
-> Ctrl Screenshot 不重新发明截图工具。它只是让 Windows 截图变得更容易触发。
-
-> Ctrl Screenshot does not replace the Windows Snipping Tool. It makes it faster to open.
-
-区域选择、截图、剪贴板和通知仍然全部由 Windows 处理。
-
-## 免费版快速开始 / Free Quick Start
-
-1. 下载或克隆本仓库。
-2. 打开 `source` 文件夹。
-3. 双击 `Start-TripleCtrl-Screenshot.vbs`。
-4. 连续轻按三次左 Ctrl。
-5. 使用 Windows 截图界面选择区域。
-
-停止监听时，运行 `Stop-TripleCtrl-Screenshot.bat`。完整说明见 [使用教程](docs/USAGE.md)。
-
-1. Download or clone this repository.
-2. Open `source`.
-3. Run `Start-TripleCtrl-Screenshot.vbs`.
-4. Triple-tap Left Ctrl.
-5. Select a region in the Windows Snipping Tool.
+Ctrl Screenshot does not replace the Windows Snipping Tool. It only makes it faster to open.
 
 ## Free vs Pro
 
@@ -59,24 +57,24 @@ Left Ctrl 是左手很容易找到的按键。连续轻按后，截图可以变�
 | 开机启动 / Start with Windows | ✅ | ✅ |
 | 绿色便携 / Portable | ✅ | ✅ |
 | 不上传截图 / No screenshot upload | ✅ | ✅ |
-| 价格 / Price | Free | **US$3.99** |
+| 价格 / Price | Free | **US$3.99 total** |
 
-## Ctrl Screenshot Pro
+## Want Double Ctrl? → Ctrl Screenshot Pro
 
 ### Double Ctrl or Triple Ctrl = Screenshot
 
-**双按或三按 Ctrl = 截图**
+![Ctrl Screenshot Pro：真实双按左 Ctrl 打开 Windows 截图工具](docs/images/ctrl-screenshot-pro-demo.gif)
 
-原生 Windows GUI，可自由切换双按或三按，同时包含：
+![Ctrl Screenshot Pro v1.1.1 真实主界面](docs/images/ctrl-screenshot-pro-main-zh.png)
 
-- **Tray Edition**：托盘显示版，可打开、暂停、恢复或退出。
-- **Hidden Tray Edition**：隐藏托盘版，无托盘图标，再次运行 EXE 可唤回界面。
+Pro 是原生 Windows GUI，可切换双按或三按，并同时包含托盘显示版和隐藏托盘版。
 
-**Both editions included — US$3.99 total.**
+**Both editions included — US$3.99 total.** 可供购买者本人在多台 Windows 电脑使用。
 
-优先通过微信 `ZZSygwh2025` 联系；也可发送邮件至 `liuyifeiyifei999@gmail.com`。付款确认后提供 GitHub 用户名，受邀进入私有仓库获取两个版本。
+- [观看 Pro 完整操作演示 MP4 / Watch the full Pro demo](https://github.com/liuyifeiyifei999-bot/ctrl-screenshot-windows/releases/download/v1.1.1/Ctrl-Screenshot-Pro-Demo.mp4)
+- [查看 Pro 介绍、购买方式和授权说明 / Pro details](docs/COMMERCIAL_EDITION.md)
 
-[查看完整介绍、截图和购买说明 →](docs/COMMERCIAL_EDITION.md)
+Pro EXE、C 源码和构建资料不在此公开仓库或公开 Release 中提供。
 
 ## 隐私 / Privacy
 
@@ -92,7 +90,7 @@ Left Ctrl 是左手很容易找到的按键。连续轻按后，截图可以变�
 
 免费版使用 VBScript 启动隐藏的 PowerShell 监听器，只判断左 Ctrl 的独立按下与松开。三次有效轻按后，它通过 `SendInput` 调用 `Win + Shift + S`。右 Ctrl、长按以及 `Ctrl+C`、`Ctrl+V` 等组合键不会累计，原有按键仍会传递给当前软件。
 
-The Free edition launches a hidden PowerShell listener through VBScript. It counts independent Left Ctrl taps and uses `SendInput` to invoke `Win + Shift + S` after three valid taps. It does not replace Windows capture, editing, OCR, or storage features.
+The Free edition launches a hidden PowerShell listener through VBScript. It counts independent Left Ctrl taps and uses `SendInput` to invoke `Win + Shift + S` after three valid taps.
 
 ## 文档 / Documentation
 
@@ -113,4 +111,4 @@ The Free edition launches a hidden PowerShell listener through VBScript. It coun
 
 公开仓库中的 Ctrl Screenshot Free 按 [MIT License](LICENSE) 授权。Ctrl Screenshot Pro 的 C 源码、商业 EXE 和私有资料不属于 MIT 授权范围。
 
-Ctrl Screenshot Free is licensed under the [MIT License](LICENSE). The proprietary C source, commercial EXE files, and private materials for Ctrl Screenshot Pro are not covered by the MIT License.
+Ctrl Screenshot Free is licensed under the [MIT License](LICENSE). Proprietary Pro source, EXE files, and private materials are not covered by the MIT License.

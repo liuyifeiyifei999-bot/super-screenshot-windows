@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.1.1 - 2026-08-22
+
+- Added real Free and Pro operation demos: short GIFs for the repository and full bilingual MP4 videos for the Release.
+- Added a ready-to-run Free ZIP with the six runtime/startup-management scripts at the package root.
+- Simplified Quick Start to download, extract, double-click, and triple-tap Left Ctrl.
+- Updated all Pro screenshots and demo scenes to the v1.1.1 application and EXE version.
+- Documented the repair-startup-path confirmation and success flow after moving the EXE.
+- Added direct Release download links and final GitHub presentation improvements.
+- No change to the Free triple-tap trigger algorithm.
+
 ## Ctrl Screenshot brand update - 2026-08-21
 
 - Renamed the product from Super Screenshot to **Ctrl Screenshot**.

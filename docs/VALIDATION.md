@@ -1,6 +1,6 @@
 # 校验记录 / Validation
 
-Validation date: 2026-08-21
+Validation date: 2026-08-22
 
 ## Tested environment
 
@@ -37,6 +37,12 @@ Windows 11 and a native English Windows installation were not available in the c
 - Launch and stop from an English path containing spaces: passed
 - Launch and stop from the repository's Chinese parent path: passed
 - Public-scope scan for EXE, C source, `.workbuddy`, ZIP, and historical HTML: passed
+- Ready-to-run v1.1.1 ZIP expanded and launched from ordinary, space-containing, and Chinese paths: passed
+- Free GIF and MP4 use the real Free listener and real Windows Snipping Tool overlay: passed
+- Pro GIF and MP4 use the real v1.1.1 Pro listener for both double- and triple-tap modes: passed
+- Pro v1.1.1 pause/resume and startup-path repair confirmation/success scenes: passed
+- Media privacy review for account names, notifications, personal paths, taskbar content, and unrelated tray icons: passed
+- Public repository and Release boundary scan for Pro EXE, C/C++ source, private archives, commercial build material, `.workbuddy`, and historical HTML: passed
 
 ## Not automated
 
