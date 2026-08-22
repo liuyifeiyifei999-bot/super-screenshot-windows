@@ -1,5 +1,10 @@
 # Ctrl Screenshot
 
+![Windows 10/11](https://img.shields.io/badge/Windows-10%20%7C%2011-0078D4?logo=windows&logoColor=white)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+![No Internet](https://img.shields.io/badge/Internet-Not%20Required-brightgreen)
+![Portable](https://img.shields.io/badge/Portable-No%20Install-blue)
+
 ## Triple Ctrl = Screenshot
 
 **三按 Ctrl = 截图**
@@ -57,7 +62,7 @@ Ctrl Screenshot does not replace the Windows Snipping Tool. It only makes it fas
 | 开机启动 / Start with Windows | ✅ | ✅ |
 | 绿色便携 / Portable | ✅ | ✅ |
 | 不上传截图 / No screenshot upload | ✅ | ✅ |
-| 价格 / Price | Free | **US$3.99 total** |
+| 价格 / Price | Free | **一次性购买 · US$3.99** |
 
 ## Want Double Ctrl? → Ctrl Screenshot Pro
 
@@ -69,7 +74,11 @@ Ctrl Screenshot does not replace the Windows Snipping Tool. It only makes it fas
 
 Pro 是原生 Windows GUI，可切换双按或三按，并同时包含托盘显示版和隐藏托盘版。
 
-**Both editions included — US$3.99 total.** 可供购买者本人在多台 Windows 电脑使用。
+**One-time purchase · US$3.99**
+
+**一次性购买 · US$3.99**
+
+Includes both Tray and Hidden Tray editions. 可供购买者本人在多台 Windows 电脑使用。
 
 - [观看 Pro 完整操作演示 MP4 / Watch the full Pro demo](https://github.com/liuyifeiyifei999-bot/ctrl-screenshot-windows/releases/download/v1.1.1/Ctrl-Screenshot-Pro-Demo.mp4)
 - [查看 Pro 介绍、购买方式和授权说明 / Pro details](docs/COMMERCIAL_EDITION.md)

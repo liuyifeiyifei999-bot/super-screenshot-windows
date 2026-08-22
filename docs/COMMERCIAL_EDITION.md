@@ -31,9 +31,11 @@ No tray icon. Closing the window keeps it running in the background; launch the 
 | Tray Edition | `Ctrl Screenshot.exe` |
 | Hidden Tray Edition | `Ctrl Screenshot Hidden.exe` |
 
-## Both editions included — US$3.99 total
+## One-time purchase · US$3.99
 
-两个 EXE 合计 **US$3.99**，不是每个版本分别收费。
+Includes both Tray and Hidden Tray editions.
+
+**一次性购买 · US$3.99**（非订阅），同时包含两个 EXE，不是每个版本分别收费。
 
 两个版本都支持：
 
@@ -60,7 +62,7 @@ No tray icon. Closing the window keeps it running in the background; launch the 
 
 ## 价格与获取方式 / Purchase
 
-- 价格：**US$3.99 total**，同时包含两个版本。
+- 价格：**一次性购买 · US$3.99**（非订阅），同时包含两个版本。
 - 允许购买者在本人拥有或日常使用的多台 Windows 电脑上使用。
 - 优先通过微信联系：`ZZSygwh2025`。
 - 使用微信付款时按付款当时的汇率折算人民币；付款前请先联系确认。
